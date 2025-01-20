@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Poppins", serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+    width:100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 5;
+    border-bottom: 3px solid #f0eeee;
+
+}
+.navbar{
+    max: width 1300px;
+    display:flex;
+    align-items: center;
+    justify-content:space-between ;
+    padding: 20px;
+    margin: 0 auto;
+}
+.nav-left, .nav-menu ,.nav-right{
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    gap: 30px;
+}
+a{
+    text-decoration: none;
+    color: #5e1f12;
+}
+.nav-left .nav-logo .logo{
+    font-size: 1.5rem;
+    font-weight: 800;
+} 
+.nav-left .nav-menu{
+    list-style: none;
+}
+.nav-left .nav-menu li a{
+    padding: 8px 10px;
+    font-size: 1rem;
+    transition: 0.5s linear ;
+
+}
+.nav-left .nav-menu li a:hover{
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    font-weight: 600;
+}
+.nav-right p{
+    font-size: 1rem;
+}
+.nav-right .btn, .submit{
+    background-color: #5e1f12;
+    color: #fff;
+    padding: 8px 22px;
+    border-radius: 30px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: 0.5s linear ;
+}
+.nav-right .btn:hover, .submit:hover{
+    background-color:transparent;
+    color: #5e1f12;
+   
+    border: 1px solid #5e1f12;
+}
+.hero-section{
+    min-height: 100vh;
+    background: #fff8e1;
+}
+.hero-section .section-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding-top: 100px;
+    min-height:100vh;
+}
+.section-content{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.hero-section .section-content .hero-details h1{
+    max-width: 70%;
+    font-size:3 rem;
+    margin-bottom: 20px;
+}
+.hero-section .section-content .hero-details p{
+    max-width: 70%;
+    font-size:1.1rem;
+    margin-bottom: 40px;
+}
+.hero-section .section-content .hero-details .order-now{
+    padding: 10px 20px;
+    border: 1px solid #5e1f12;
+    background: transparent;
+    color: #5e1f12;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.hero-section .section-content .hero-details .order-now:hover{
+    border: 1px solid transparent;
+    background: #5e1f12;
+    color: #fff;
+}
+.about-us{
+    width: 100%;
+    background-color: #fff;
+    padding: 50px 30px;
+}
+.about-us .section-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+.about-us .section-content .about-image img{
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.about-us .about-details{
+    max-width:50%;
+}
+.section-title{
+    text-align: center;
+    padding:60px 8px 100px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+ }
+ .section-title::after{
+    content:'';
+    display: block;
+    background: #5e1f12;
+    height: 5px;
+    width: 100px;
+    border-radius: 30px;
+    margin: 10px auto 0;
+ }
+ .about-details .section-title{
+    padding: 0;
+ }
+ .about-details p{
+    font-family:1.1rem;
+    line-height:30px;
+    text-align:center;
+    margin:50px 0 30px;
+ }
+ .menu-section {
+    background-color: #5e1f12; /* Dark background color */
+    color: #fff; /* White text for contrast */
+    padding: 50px 0 100px; /* Top and bottom padding */
+}
+
+.menu-section .section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    position: relative;
+    color: #fff;
+}
+
+.menu-section .section-title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #fff; /* White underline */
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+.menu-section .section-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-section .menu-list {
+    display: grid; /* Switch to grid for consistent layout */
+    grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+    gap: 30px; /* Space between items */
+    flex-wrap: wrap; /* Allows wrapping for responsiveness */
+}
+
+.menu-section .menu-list .menu-item {
+    background: #fff; /* Light background for contrast */
+    color: #5e1f12; /* Text color matching theme */
+    width: 100%; /* Full width inside the grid */
+    max-width: 250px; /* Optional: Limit item width */
+    padding: 15px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    transition: transform 0.3s, box-shadow 0.3s;
+    height: auto; /* Allow dynamic height */
+}
+
+.menu-section .menu-list .menu-item:hover {
+    transform: translateY(-10px); /* Hover effect for item */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+}
+
+.menu-section .menu-list .menu-item img {
+    width: 100%; /* Full width for image */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 200px; /* Limit height for consistency */
+    object-fit: cover; /* Ensures image fits within its container */
+    border-radius: 20px; /* Rounded corners */
+    margin-bottom: 10px;
+}
+
+.menu-section .menu-list .menu-item h3 {
+    margin: 10px 0 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #5e1f12; /* Match the theme */
+}
+.theme-section {
+    background-color: #fff;
+    color: #5e1f12;
+    padding: 50px 20px;
+}
+
+.theme-section .section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.theme-section .menu-list {
+    display: grid; /* Enables grid layout */
+    grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+    gap: 20px; /* Space between grid items */
+    max-width: 1200px;
+    margin: 0 auto; /* Centers the grid */
+}
+
+.theme-section .menu-item {
+    background: #f9f9f9; /* Light background for contrast */
+    overflow: hidden;
+    border-radius: 8px; /* Rounded corners */
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 15px;
+}
+
+.theme-section .menu-item img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px;
+    object-fit: cover; /* Ensures images cover their container */
+    margin-bottom: 10px;
+}
+.theme-section .section-title {
+    font-size: 2.8rem; /* Slightly larger text */
+    color: #5e1f12;
+    text-align: center; /* Center-align the title */
+    font-weight: bold; /* Make the title bold */
+    text-transform: uppercase; /* Uppercase styling for a strong effect */
+    letter-spacing: 2px; /* Add spacing between letters */
+    position: relative; /* For positioning the underline */
+    margin-bottom: 30px; /* Add space below the title */
+}
+
+.theme-section .section-title::after {
+    content: ""; /* Create a decorative underline */
+    display: block;
+    width: 100px; /* Width of the underline */
+    height: 4px; /* Thickness of the underline */
+    background-color: #5e1f12; /* Color matching the title */
+    margin: 10px auto 0; /* Center the underline */
+    border-radius: 2px; /* Add rounded edges to the underline */
+}
+.contact-us{
+    background-color: rgb(253, 241, 225);
+    padding-bottom: 100px;
+}
+.contact-us .section-content{
+    display: flex;
+    margin: 0 auto;
+    /* align-items: center; */
+    justify-content: space-between;
+    gap: 20px;
+}
+.contact-form{
+    max-width: 50%;
+}
+.contact-form form{
+    width: 100%;
+}
+.contact-form form input,textarea{
+    width: 100%;
+    height: 50px;
+    padding: 0px 12px;
+    border: 1px solid #c9c8c8;
+    outline: none;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    font: size 1rem;
+}
+textarea{
+    height: 100px;
+    resize: vertical;
+}
+.contact-us .contact-details{
+    max-width:40%;
+    display: flex;
+    flex-direction: column;
+}
+.contact-us .contact-details div{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin:10px 0;
+}
+.footer{
+    background-color: #5e1f12;
+    color:#fff;
+    padding: 20px 30px;
+}
+.footer .section-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer .section-content .footer-links ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+/* General styles for mobile first */
+body {
+    font-size: 16px; /* Default font size for better scaling */
+}
+
+/* For screens up to 768px wide (tablets and small devices) */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start;
+    }
+
+    .nav-menu {
+        flex-direction: column; /* Stack menu links vertically */
+        gap: 10px;
+    }
+
+    .hero-section .section-content {
+        flex-direction: column; /* Stack image and text vertically */
+    }
+
+    .hero-section .hero-details h1,
+    .hero-section .hero-details p {
+        max-width: 100%; /* Remove width limit for better fit */
+        text-align: center; /* Center-align text */
+    }
+
+    .menu-section .menu-list {
+        grid-template-columns: repeat(2, 1fr); /* Two items per row */
+    }
+
+    .theme-section .menu-list {
+        grid-template-columns: repeat(2, 1fr); /* Two items per row */
+    }
+
+    .contact-us .section-content {
+        flex-direction: column; /* Stack contact form and details vertically */
+    }
+
+    .contact-form,
+    .contact-details {
+        max-width: 100%; /* Take full width */
+    }
+}
+
+/* For screens up to 480px wide (mobile devices) */
+@media (max-width: 480px) {
+    .nav-right .btn {
+        padding: 6px 15px; /* Reduce button size */
+    }
+
+    .menu-section .menu-list,
+    .theme-section .menu-list {
+        grid-template-columns: 1fr; /* Single column layout */
+    }
+
+    .hero-section .hero-image img {
+        width: 100%; /* Make image responsive */
+    }
+
+    .about-us .about-image img {
+        width: 100%; /* Adjust image size for small screens */
+        height: auto;
+    }
+
+    .footer .section-content {
+        flex-direction: column; /* Stack footer content vertically */
+        text-align: center; /* Center text */
+    }
+
+    .footer-links ul {
+        flex-direction: column; /* Stack footer links vertically */
+        gap: 20px;
+    }
+}
